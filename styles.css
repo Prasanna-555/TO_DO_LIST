@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -39,10 +39,17 @@ h1 {
 .input-section {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
 
-input {
-  flex: 1;
+#search {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+input, select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -101,5 +108,16 @@ li .actions button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 20px;
 }
+
+.utils {
+  display: flex;
+  gap: 10px;
+}
+
+.priority-low { color: green; font-weight: bold; }
+.priority-medium { color: orange; font-weight: bold; }
+.priority-high { color: red; font-weight: bold; }
